@@ -24,6 +24,26 @@
 --- 
 ## Решение 1
 
+Вывод terraform
+
+![img1](img/img1.jpg)
+
+Проверяем создание ключа и настройки шифрования бакета
+
+![img2](img/img2.jpg)
+
+Проверяем доступ к картинке. Ответ HTTP/2 200 означает, что файл доступен
+В заголовках ответа видно, что шифрование работает
+```
+x-amz-server-side-encryption: aws:kms
+x-amz-server-side-encryption-aws-kms-key-id: abjr51biaimqgdilm2tq
+```
+
+Это означает, что файл расшифровывается автоматически при запросе, если у пользователя есть права доступа к бакету. Файл хранится в зашифрованном виде, но Yandex Cloud автоматически расшифровывает его при выдаче.
+
+![img3](img/img3.jpg)
+
+[Манифесты Terraform](https://github.com/ViktorLebedev93/orgnet-15.3hw/tree/main/terraform-yandex-lb)
 
 Resource Terraform:
 
