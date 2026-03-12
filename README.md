@@ -24,6 +24,10 @@
 --- 
 ## Решение 1
 
+[Манифесты Terraform](https://github.com/ViktorLebedev93/orgnet-15.3hw/tree/main/terraform-yandex-lb)
+
+Часть 1.
+
 Вывод terraform
 
 ![img1](img/img1.jpg)
@@ -43,7 +47,35 @@ x-amz-server-side-encryption-aws-kms-key-id: abjr51biaimqgdilm2tq
 
 ![img3](img/img3.jpg)
 
-[Манифесты Terraform](https://github.com/ViktorLebedev93/orgnet-15.3hw/tree/main/terraform-yandex-lb)
+Часть 2.
+
+ Создаём бакет с уникальным именем и включаем настройки веб-сайта
+
+![img4](img/img4.jpg)
+
+Загружаем домашние странички в бакет
+
+![img5](img/img5.jpg)
+
+Проверяем доступ через curl
+
+![img6](img/img6.jpg)
+
+Создаем сертификат Lets'n'Crypt
+
+![img7](img/img7.jpg)
+
+Сертификат успешно выпущен и валидирован
+
+![img8](img/img8.jpg)
+
+Включение HTTPS на бакете и проверка доступа по https через curl
+
+![img9](img/img9.jpg)
+
+![img10](img/img10.jpg)
+
+![img11](img/img11.jpg)
 
 Resource Terraform:
 
